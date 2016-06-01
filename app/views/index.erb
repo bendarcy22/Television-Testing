@@ -1,0 +1,7 @@
+<h1>List of Shows</h1>
+
+<ul>
+  <% @shows.each do |show| %>
+    <li class="show"><%= "#{show[:title]} (#{show[:network]})" %></li>
+  <% end %>
+</ul>
